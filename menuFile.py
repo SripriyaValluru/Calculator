@@ -1,18 +1,23 @@
 #Menu file
-import addition,subtract,multiplication,division
+from add import add
+from sub import sub
+from mul import mul
 
-
-
-print("This program is for add,sub,mult and divide\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division")
+print("This program is for add,sub,mult \n1.Addition\n2.Subtraction\n3.Multiplication")
 s=int(input("Enter your choice:"))
 if(s==1):
-	print(addition.add())
+	a = int(input("Enter a value:"))
+	b = int(input("Enter b value:"))
+	print (add(a,b))
 elif(s==2):
-	print(subtract.sub())
+	a = int(input("Enter a value:"))
+	b = int(input("Enter b value:"))
+	print (sub(a,b))
 elif(s==3):
-	print(multiplication.mult())
-elif(s==4):
-	print(division.div())
+	a = int(input("Enter a value:"))
+	b = int(input("Enter b value:"))
+	print (mul(a,b))
+
 
 else:
 	print("Invalid input")	
